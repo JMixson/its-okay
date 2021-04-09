@@ -1,0 +1,94 @@
+/* nav list styles */
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__list__link,
+.footer__list__link {
+  @extend .list__link;
+}
+
+.header__nav,
+.footer__nav {
+  @include grid-col-1;
+  grid-gap: 0;
+  align-items: center;
+  font-size: $font-size;
+}
+
+.header__nav--mobile {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nav__logo {
+  font-family: $second-font-family;
+  font-size: $font-size;
+  padding-left: 0.5em;
+}
+
+.nav__list {
+  flex-direction: column;
+  @include breakpoint(sm) {
+    flex-direction: row;
+  }
+}
+
+.nav__text {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(sm) {
+    justify-self: end;
+  }
+}
+
+/* header nav */
+.header__nav {
+  background-color: $white-color;
+  padding: 1em;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* setup for mobile nav display */
+.topnav {
+  overflow: hidden;
+
+  .list__item {
+    a {
+      @include breakpoint(xsm) {
+        display: none;
+      }
+    }
+
+    .icon {
+      display: none;
+
+      @include breakpoint(xsm) {
+        display: block;
+        float: right;
+      }
+    }
+  }
+
+  .responsive {
+    position: relative;
+
+    .list__item a {
+      float: none;
+      display: block;
+      text-align: left;
+
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}

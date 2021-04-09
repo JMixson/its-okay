@@ -1,0 +1,99 @@
+/* display styles */
+.d--block {
+  display: block;
+}
+.d--inblock {
+  display: inline-block;
+}
+.d--none {
+  display: none;
+}
+
+.d--none--mobile {
+  display: none;
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
+
+// positioning styles
+#absolute--top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+}
+
+/* width styles */
+.wrapper-900 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em;
+}
+.wrapper-1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+/* margin and padding styles */
+.margin-1 {
+  margin: 1em;
+}
+
+.margin-tb-1 {
+  margin: 1em 0;
+}
+
+.margin-rl-1 {
+  margin: 0 1em;
+}
+
+.padding-1 {
+  padding: 1em;
+}
+
+/* grid styles */
+.container,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6 {
+  @include grid-col-1;
+}
+
+.container,
+.no-gap {
+  grid-gap: 0;
+}
+
+.col-2,
+.col-4,
+.col-6 {
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.col-3 {
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.col-4,
+.col-6 {
+  @include breakpoint(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.col-6 {
+  @include breakpoint(xlg) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

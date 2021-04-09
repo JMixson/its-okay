@@ -1,0 +1,223 @@
+/*---------------------- HTML, ALL, BODY STYLES ----------------------*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+}
+body {
+  font-size: $font-size, 16px;
+  font-family: $main-font-family, sans-serif;
+
+  @include breakpoint(xlg) {
+    $font-size: 1.25em;
+    font-size: $font-size, 20px;
+  }
+}
+* {
+  &::before,
+  &::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+}
+
+/* text styles */
+h1,
+.h1 {
+  font-size: calc(#{$font-size} * 1.5);
+
+  @include breakpoint(sm) {
+    font-size: calc-em(42px, 18px);
+  }
+}
+
+h2,
+.h2 {
+  font-size: calc-em(32px, 18px);
+}
+
+h3,
+.h3 {
+  font-size: calc-em(26px, 18px);
+}
+
+h4,
+.h4 {
+  font-size: calc-em(22px, 18px);
+}
+
+h5,
+.h5 {
+  font-size: calc-em(20px, 18px);
+}
+
+h6,
+.h6 {
+  font-size: calc-em(18px, 18px);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $second-font-family, sans-serif;
+  font-weight: 400;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 1em 0;
+}
+
+p,
+span {
+  font-size: $font-size;
+
+  @include breakpoint(xlg) {
+    font-size: calc(#{$font-size} * 1.15);
+  }
+}
+
+.lead {
+  font-size: 2em;
+}
+
+.text--centered {
+  text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+.text--left {
+  text-align: left;
+}
+
+/* link styles */
+a {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $main-color;
+
+    @include transition-300;
+  }
+
+  &:hover,
+  &:active {
+    color: $second-color;
+  }
+}
+
+/* img styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* colors */
+.bg--main {
+  background-color: $main-color;
+}
+.bg--second {
+  background-color: $second-color;
+}
+.bg--white {
+  background-color: $white-color;
+}
+
+.text--main {
+  color: $main-color;
+}
+.text--second {
+  color: $second-color;
+}
+.text--white {
+  color: $white-color;
+}
+.text--black {
+  color: $black-color;
+}
+
+/* form styles */
+input {
+  font-family: $main-font-family;
+
+  &[type="text"],
+  &[type="email"],
+  &[type="number"],
+  &[type="search"],
+  textarea {
+    border: 1.5px solid $main-color;
+    padding: 0.5em 0.75em;
+  }
+
+  &[type="search"] {
+    display: block;
+    width: 100%;
+  }
+
+  &[type="number"] {
+    width: 25%;
+  }
+}
+
+label {
+  @include breakpoint(md) {
+    display: block;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+  }
+}
+
+/* border styles */
+.border--bottom {
+  border-bottom: 2px solid $main-color;
+}
+
+.border--second {
+  border: 1.5px solid $second-color;
+}
+
+hr {
+  border: 1.5px solid $main-color;
+  margin: 1.25em 0;
+}
+
+/*---------------------- HEADER ----------------------*/
+// .header {
+// }
+
+/*---------------------- MAIN ----------------------*/
+.main {
+  margin: 1em auto;
+}
+
+.section {
+  margin: 2em 0;
+}
+
+/*---------------------- FOOTER ----------------------*/
+.footer {
+  margin-top: 1em;
+  padding: 1em 0;
+  background-color: $main-color;
+  color: $white-color;
+}

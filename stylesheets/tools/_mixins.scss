@@ -1,0 +1,39 @@
+/* grid */
+@mixin grid-col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+/* media query mixin */
+@mixin breakpoint($class) {
+  @if $class == xsm {
+    @media (max-width: 650px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media (min-width: 650px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media (min-width: 950px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1250px) {
+      @content;
+    }
+  } @else if $class == xlg {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xsm, sm, md, lg, xlg";
+  }
+}
+
+/* transitions */
+@mixin transition-300 {
+  transition: all 300ms ease-in-out;
+  backface-visibility: hidden;
+}
