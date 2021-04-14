@@ -31,7 +31,8 @@ body {
 
 body {
   font-size: 1.125em, 16px;
-  font-family: apertura, sans-serif, sans-serif; }
+  font-family: apertura, sans-serif, sans-serif;
+  overflow-x: hidden; }
   @media (min-width: 1250px) {
     body {
       font-size: 1.25em, 20px; } }
@@ -832,6 +833,25 @@ hr {
         position: absolute;
         right: 0;
         top: 0; }
+
+/* quote styles */
+.quote {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../img/bg-squiggly-lines.png");
+  background-size: cover;
+  background-color: #fff;
+  padding: 1em; }
+
+.quote__text {
+  background-color: #fff;
+  padding: 1em; }
+  .quote__text ::before {
+    content: "Before";
+    color: #ffd166;
+    font-size: 2em; }
 
 /* card styles */
 .card {

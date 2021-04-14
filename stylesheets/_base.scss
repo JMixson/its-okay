@@ -11,6 +11,7 @@ body {
 body {
   font-size: $font-size, 16px;
   font-family: $main-font-family, sans-serif;
+  overflow-x: hidden;
 
   @include breakpoint(xlg) {
     $font-size: 1.25em;
