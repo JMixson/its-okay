@@ -36,21 +36,278 @@
   padding: 1em;
 }
 
-/* margin and padding styles */
-.margin-1 {
-  margin: 1em;
+/*---------------------- FLEX ----------------------*/
+.flex {
+  display: flex;
 }
 
-.margin-tb-1 {
-  margin: 1em 0;
+/* direction */
+.flex-row {
+  flex-direction: row;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
-.margin-rl-1 {
-  margin: 0 1em;
+.flex-column {
+  flex-direction: column;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
 }
 
-.padding-1 {
-  padding: 1em;
+/* wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* grow */
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-2 {
+  flex-grow: 2;
+}
+.flex-grow-3 {
+  flex-grow: 3;
+}
+.flex-grow-4 {
+  flex-grow: 4;
+}
+
+/* shrink */
+.flex-shrink-2 {
+  flex-shrink: 2;
+}
+.flex-shrink-3 {
+  flex-shrink: 3;
+}
+.flex-shrink-4 {
+  flex-shrink: 4;
+}
+
+/* justify content */
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-left {
+  justify-content: left;
+}
+.justify-right {
+  justify-content: right;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-even {
+  justify-content: space-even;
+}
+
+/* align items */
+.align-items-start {
+  align-items: flex-start;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.align-items-center {
+  align-items: center;
+}
+.align-items-left {
+  align-items: left;
+}
+.align-items-right {
+  align-items: right;
+}
+
+.align-items-between {
+  align-items: space-between;
+}
+.align-items-around {
+  align-items: space-around;
+}
+.align-items-even {
+  align-items: space-even;
+}
+
+/* align content */
+.align-content-start {
+  align-content: flex-start;
+}
+.align-content-end {
+  align-content: flex-end;
+}
+.align-content-stretch {
+  align-content: stretch;
+}
+
+.align-content-center {
+  align-content: center;
+}
+.align-content-left {
+  align-content: left;
+}
+.align-content-right {
+  align-content: right;
+}
+
+.align-content-between {
+  align-content: space-between;
+}
+.align-content-around {
+  align-content: space-around;
+}
+.align-content-even {
+  align-content: space-even;
+}
+
+/* align self */
+.align-self-auto {
+  align-self: flex-auto;
+}
+.align-self-start {
+  align-self: flex-start;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.align-self-stretch {
+  align-self: stretch;
+}
+
+.align-self-center {
+  align-self: center;
+}
+.align-self-baseline {
+  align-self: baseline;
+}
+
+/*---------------------- FLOATS ----------------------*/
+.f-right {
+  float: right;
+}
+.f-left {
+  float: left;
+}
+
+/* clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+
+/*---------------------- WIDTH & HEIGHT ----------------------*/
+.w-half {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.max-800 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/*---------------------- PADDING & MARGIN ----------------------*/
+/* padding */
+.p {
+  @include padding-margin-modifiers;
+}
+
+.px {
+  @include pm-x-axis-modifiers;
+}
+
+.py {
+  @include pm-y-axis-modifiers;
+}
+
+.pt {
+  @include padding-margin-modifiers($attribute: "padding-top");
+}
+
+.pb {
+  @include padding-margin-modifiers($attribute: "padding-bottom");
+}
+
+.pl {
+  @include padding-margin-modifiers($attribute: "padding-left");
+}
+
+.pr {
+  @include padding-margin-modifiers($attribute: "padding-right");
+}
+
+/* margin */
+.m {
+  @include padding-margin-modifiers($attribute: "margin");
+}
+
+.mx {
+  @include pm-x-axis-modifiers($attribute: "margin");
+}
+
+.my {
+  @include pm-y-axis-modifiers($attribute: "margin");
+}
+
+.mt {
+  @include padding-margin-modifiers($attribute: "margin");
+}
+
+.mb {
+  @include padding-margin-modifiers($attribute: "margin");
+}
+
+.ml {
+  @include padding-margin-modifiers($attribute: "margin");
+}
+
+.mr {
+  @include padding-margin-modifiers($attribute: "margin");
 }
 
 /* grid styles */
