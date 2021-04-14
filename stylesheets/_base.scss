@@ -74,7 +74,7 @@ h5,
 h6,
 .h6 {
   font-family: $second-font-family, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h4,
@@ -95,27 +95,52 @@ span {
   }
 }
 
+p,
+ul li {
+  line-height: 1.35em;
+}
+
+/* genetic class text styles */
+.text {
+  //text-transform
+  @include transform-modifiers;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text {
+  //text-weight
+  @include weight-modifiers;
+}
+
+.text {
+  //text-align
+  @include align-modifiers;
+}
+
 .lead {
-  font-size: 2em;
+  font-size: 2.986em;
 }
 
-.text--centered {
-  text-align: center;
-}
-.text--right {
-  text-align: right;
-}
-.text--left {
-  text-align: left;
+/*---------------------- COLORS ----------------------*/
+.text {
+  @include color-modifiers;
 }
 
+.bg {
+  @include color-modifiers($attribute: "background-color");
+}
+
+/*---------------------- GENERAL STYLES ----------------------*/
 /* link styles */
 a {
   &:link,
   &:visited {
     display: inline-block;
     text-decoration: none;
-    color: $main-color;
+    color: $second-color;
 
     @include transition-300;
   }
@@ -123,6 +148,7 @@ a {
   &:hover,
   &:active {
     color: $second-color;
+    text-decoration: underline;
   }
 }
 

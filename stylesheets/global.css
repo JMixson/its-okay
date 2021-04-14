@@ -83,7 +83,7 @@ h5,
 h6,
 .h6 {
   font-family: apertura, sans-serif, sans-serif;
-  font-weight: 400; }
+  font-weight: 700; }
 
 h4,
 .h4,
@@ -101,27 +101,74 @@ span {
     span {
       font-size: calc(1.125em * 1.15); } }
 
-.lead {
-  font-size: 2em; }
+p,
+ul li {
+  line-height: 1.35em; }
 
-.text--centered {
-  text-align: center; }
+/* genetic class text styles */
+.text--uppercase {
+  text-transform: uppercase; }
+.text--lowercase {
+  text-transform: lowercase; }
+.text--capitalize {
+  text-transform: capitalize; }
 
-.text--right {
-  text-align: right; }
+.text-italic {
+  font-style: italic; }
+
+.text--bold {
+  font-weight: 700; }
+.text--normal {
+  font-weight: 400; }
 
 .text--left {
   text-align: left; }
+.text--right {
+  text-align: right; }
+.text--center {
+  text-align: center; }
 
+.lead {
+  font-size: 2.986em; }
+
+/*---------------------- COLORS ----------------------*/
+.text--main {
+  color: #8ecae6; }
+.text--second {
+  color: #fc4672; }
+.text--third {
+  color: #ffd166; }
+.text--black {
+  color: #101010; }
+.text--gray {
+  color: #424242; }
+.text--white {
+  color: #fff; }
+
+.bg--main {
+  background-color: #8ecae6; }
+.bg--second {
+  background-color: #fc4672; }
+.bg--third {
+  background-color: #ffd166; }
+.bg--black {
+  background-color: #101010; }
+.bg--gray {
+  background-color: #424242; }
+.bg--white {
+  background-color: #fff; }
+
+/*---------------------- GENERAL STYLES ----------------------*/
 /* link styles */
 a:link, a:visited {
   display: inline-block;
   text-decoration: none;
-  color: #8ecae6;
+  color: #fc4672;
   transition: all 300ms ease-in-out;
   backface-visibility: hidden; }
 a:hover, a:active {
-  color: #fc4672; }
+  color: #fc4672;
+  text-decoration: underline; }
 
 /* img styles */
 img {
