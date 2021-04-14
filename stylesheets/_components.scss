@@ -1,3 +1,26 @@
+/* quote styles */
+.quote {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-image: url("../img/bg-squiggly-lines.png");
+  background-size: cover;
+  background-color: $white-color;
+  padding: 1em;
+}
+
+.quote__text {
+  background-color: $white-color;
+  padding: 1em;
+
+  ::before {
+    content: "Before";
+    color: $third-color;
+    font-size: 2em;
+  }
+}
+
 /* card styles */
 .card {
   position: relative;
