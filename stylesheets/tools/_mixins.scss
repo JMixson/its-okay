@@ -48,7 +48,7 @@ $colors: (
 
 @mixin color-modifiers($attribute: "color") {
   @each $name, $hex in $colors {
-    &-#{$name} {
+    &--#{$name} {
       #{$attribute}: $hex;
     }
   }
@@ -62,7 +62,7 @@ $align: (
 
 @mixin align-modifiers($attribute: "text-align") {
   @each $name, $option in $align {
-    &-#{$name} {
+    &--#{$name} {
       #{$attribute}: $option;
     }
   }
@@ -76,7 +76,7 @@ $transform: (
 
 @mixin transform-modifiers($attribute: "text-transform") {
   @each $name, $option in $transform {
-    &-#{$name} {
+    &--#{$name} {
       #{$attribute}: $option;
     }
   }
@@ -89,7 +89,7 @@ $weights: (
 
 @mixin weight-modifiers($attribute: "font-weight") {
   @each $name, $option in $weights {
-    &-#{$name} {
+    &--#{$name} {
       #{$attribute}: $option;
     }
   }
