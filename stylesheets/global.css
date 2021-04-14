@@ -843,7 +843,8 @@ hr {
   background-image: url("../img/bg-squiggly-lines.png");
   background-size: cover;
   background-color: #fff;
-  padding: 1em; }
+  padding: 1em;
+  position: relative; }
 
 .quote__text {
   background-color: #fff;
