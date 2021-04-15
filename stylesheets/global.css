@@ -11,7 +11,8 @@
   text-align: center;
   font-weight: 600;
   min-width: 100px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-decoration: none !important; }
 
 .list__link:link, .header__list__link:link,
 .footer__list__link:link, .list__link:visited, .header__list__link:visited,
@@ -908,14 +909,13 @@ hr {
 
 /* btn styles */
 .btn--main {
-  border: 3px solid #fc4672;
-  color: #fff !important;
-  background-color: #424242;
+  border: 3px solid #424242;
+  color: #424242 !important;
+  background-color: #ffd166;
   transition: all 300ms ease-in-out;
   backface-visibility: hidden; }
   .btn--main:hover {
-    color: #8ecae6 !important;
-    background-color: #fc4672; }
+    color: #8ecae6 !important; }
 
 .btn--second {
   border: 3px solid #fc4672;

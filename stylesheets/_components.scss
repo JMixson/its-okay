@@ -86,14 +86,13 @@
 /* btn styles */
 .btn--main {
   @extend .btn;
-  border: 3px solid $second-color;
-  color: $white-color !important;
-  background-color: $grey-color;
+  border: 3px solid $grey-color;
+  color: $grey-color !important;
+  background-color: $third-color;
   @include transition-300;
 
   &:hover {
     color: $main-color !important;
-    background-color: $second-color;
   }
 }
 
