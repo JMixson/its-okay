@@ -1,4 +1,12 @@
 /* nav list styles */
+.list__link {
+  &:link,
+  &:visited {
+    margin: 0.5em;
+    font-family: $second-font-family, arial;
+  }
+}
+
 .nav ul {
   display: flex;
   list-style-type: none;
