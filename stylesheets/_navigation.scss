@@ -32,8 +32,7 @@
 }
 
 .nav__logo {
-  font-family: $second-font-family;
-  font-size: $font-size;
+  width: clamp(75px, 30vw, 120px);
   padding-left: 0.5em;
 }
 
