@@ -172,6 +172,10 @@ $span-r: (
   @each $name, $value in $span-r {
     &-#{$name} {
       #{$attribute}: $value;
+
+      @include breakpoint(sm) {
+        grid-row: span 12;
+      }
     }
   }
 }
@@ -195,6 +199,10 @@ $span-c: (
   @each $name, $value in $span-c {
     &-#{$name} {
       #{$attribute}: $value;
+
+      @include breakpoint(sm) {
+        grid-row: span 12;
+      }
     }
   }
 }
