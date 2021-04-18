@@ -296,19 +296,19 @@
 }
 
 .mt {
-  @include padding-margin-modifiers($attribute: "margin");
+  @include padding-margin-modifiers($attribute: "margin-top");
 }
 
 .mb {
-  @include padding-margin-modifiers($attribute: "margin");
+  @include padding-margin-modifiers($attribute: "margin-bottom");
 }
 
 .ml {
-  @include padding-margin-modifiers($attribute: "margin");
+  @include padding-margin-modifiers($attribute: "margin-left");
 }
 
 .mr {
-  @include padding-margin-modifiers($attribute: "margin");
+  @include padding-margin-modifiers($attribute: "margin-right");
 }
 
 /* grid styles */
