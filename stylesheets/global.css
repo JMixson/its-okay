@@ -942,9 +942,6 @@ hr {
 
 /* quote styles */
 .quote {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-top: 1em;
   margin-bottom: 1em;
   background-image: url("../img/bg-squiggly-lines.png");
   background-size: cover;
@@ -954,11 +951,15 @@ hr {
 
 .quote__text {
   background-color: #fff;
-  padding: 1em; }
-  .quote__text ::before {
-    content: "Before";
+  padding: 1em;
+  position: relative; }
+  .quote__text::before {
+    content: "\201C";
+    position: absolute;
+    top: 20px;
+    left: -10px;
     color: #ffd166;
-    font-size: 2em; }
+    font-size: 3em; }
 
 /* card styles */
 .card {
