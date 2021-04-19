@@ -153,3 +153,17 @@
     right: -18px;
   }
 }
+
+/* alert styles */
+.alert {
+  padding-left: 1em;
+  border-left: 3px solid $second-color;
+
+  @include breakpoint(lg) {
+    margin-top: 5.5em;
+  }
+
+  @include breakpoint(xlg) {
+    margin-top: 6em;
+  }
+}

@@ -19,7 +19,7 @@ body {
   font-size: 1.125em, 16px;
   font-family: apertura, sans-serif, sans-serif;
   overflow-x: hidden; }
-  @media (min-width: 1250px) {
+  @media (min-width: 1200px) {
     body {
       font-size: 1.25em, 20px; } }
 
@@ -83,7 +83,7 @@ h6,
 p,
 span {
   font-size: 1.125em; }
-  @media (min-width: 1250px) {
+  @media (min-width: 1200px) {
     p,
     span {
       font-size: calc(1.125em * 1.15); } }
@@ -863,7 +863,7 @@ hr {
   .col-6 {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .col-6 {
     grid-template-columns: repeat(6, 1fr); } }
 
@@ -1049,5 +1049,16 @@ hr {
     position: absolute;
     bottom: -30px;
     right: -18px; }
+
+/* alert styles */
+.alert {
+  padding-left: 1em;
+  border-left: 3px solid #fc4672; }
+  @media (min-width: 950px) {
+    .alert {
+      margin-top: 5.5em; } }
+  @media (min-width: 1200px) {
+    .alert {
+      margin-top: 6em; } }
 
 /*# sourceMappingURL=global.css.map */
