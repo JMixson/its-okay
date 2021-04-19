@@ -4,22 +4,37 @@
   background-image: url("../img/bg-squiggly-lines.png");
   background-size: cover;
   background-color: $white-color;
-  padding: 1em;
+  padding: 3em 2em;
   position: relative;
+}
+
+.quote__img {
+  position: absolute;
+  top: -5rem;
+  left: -10rem;
+  width: clamp(300px, 40%, 500px);
+  z-index: 2;
 }
 
 .quote__text {
   background-color: $white-color;
   padding: 1em;
   position: relative;
+  z-index: 1;
+  grid-column: 4/12;
 
   &::before {
-    content: "\201C";
+    content: url("../img/quote.svg");
     position: absolute;
     top: 20px;
     left: -10px;
-    color: $third-color;
-    font-size: 3em;
+  }
+
+  &::after {
+    content: url("../img/quote.svg");
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
   }
 }
 
