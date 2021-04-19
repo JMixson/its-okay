@@ -140,7 +140,7 @@ a {
   &:link,
   &:visited {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: underline;
     color: $second-color;
 
     @include transition-300;
@@ -149,7 +149,7 @@ a {
   &:hover,
   &:active {
     color: $second-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 

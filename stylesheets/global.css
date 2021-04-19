@@ -149,13 +149,13 @@ ul li {
 /* link styles */
 a:link, a:visited {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: underline;
   color: #fc4672;
   transition: all 300ms ease-in-out;
   backface-visibility: hidden; }
 a:hover, a:active {
   color: #fc4672;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 /* img styles */
 img {
