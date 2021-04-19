@@ -974,10 +974,10 @@ hr {
   padding: 1em;
   position: relative;
   z-index: 1;
-  grid-column: 1/12; }
+  grid-column: 1/13; }
   @media (min-width: 750px) {
     .quote__text {
-      grid-column: 4/12; } }
+      grid-column: 4/13; } }
   .quote__text::before {
     content: url("../img/quote.svg");
     position: absolute;
