@@ -940,55 +940,6 @@ hr {
         right: 0;
         top: 0; }
 
-/* quote styles */
-.quote {
-  margin-bottom: 1em;
-  background-image: url("../img/bg-squiggly-lines.png");
-  background-size: cover;
-  background-color: #fff;
-  padding: 3em 2em;
-  position: relative; }
-  .quote .bg--white {
-    padding-top: 7em; }
-    @media (min-width: 750px) {
-      .quote .bg--white {
-        padding: 3em 2em; } }
-
-.quote__img {
-  position: absolute;
-  top: -25%;
-  left: 30%;
-  width: clamp(200px, 40%, 500px);
-  z-index: 2; }
-  @media (max-width: 600px) {
-    .quote__img {
-      top: -9%;
-      left: 30%; } }
-  @media (min-width: 750px) {
-    .quote__img {
-      top: -8%;
-      left: -9rem; } }
-
-.quote__text {
-  background-color: #fff;
-  padding: 1em;
-  position: relative;
-  z-index: 1;
-  grid-column: 1/13; }
-  @media (min-width: 750px) {
-    .quote__text {
-      grid-column: 4/13; } }
-  .quote__text::before {
-    content: url("../img/quote.svg");
-    position: absolute;
-    top: -10px;
-    left: -14px; }
-  .quote__text::after {
-    content: url("../img/quote.svg");
-    position: absolute;
-    bottom: -30px;
-    right: -18px; }
-
 /* btn styles */
 .btn, .btn--main, .btn--second, .btn--third {
   padding: 0.25em 0.75em;
@@ -1049,5 +1000,54 @@ hr {
   width: 100%;
   margin-bottom: 0.5em;
   box-sizing: border-box; }
+
+/* quote styles */
+.quote {
+  margin-bottom: 1em;
+  background-image: url("../img/bg-squiggly-lines.png");
+  background-size: cover;
+  background-color: #fff;
+  padding: 3em 2em;
+  position: relative; }
+  .quote .bg--white {
+    padding-top: 7em; }
+    @media (min-width: 750px) {
+      .quote .bg--white {
+        padding: 3em 2em; } }
+
+.quote__img {
+  position: absolute;
+  top: -25%;
+  left: 30%;
+  width: clamp(200px, 40%, 500px);
+  z-index: 2; }
+  @media (max-width: 600px) {
+    .quote__img {
+      top: -9%;
+      left: 30%; } }
+  @media (min-width: 750px) {
+    .quote__img {
+      top: -8%;
+      left: -9rem; } }
+
+.quote__text {
+  background-color: #fff;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  grid-column: 1/13; }
+  @media (min-width: 750px) {
+    .quote__text {
+      grid-column: 4/13; } }
+  .quote__text::before {
+    content: url("../img/quote.svg");
+    position: absolute;
+    top: -10px;
+    left: -14px; }
+  .quote__text::after {
+    content: url("../img/quote.svg");
+    position: absolute;
+    bottom: -30px;
+    right: -18px; }
 
 /*# sourceMappingURL=global.css.map */

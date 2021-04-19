@@ -1,64 +1,3 @@
-/* quote styles */
-.quote {
-  margin-bottom: 1em;
-  background-image: url("../img/bg-squiggly-lines.png");
-  background-size: cover;
-  background-color: $white-color;
-  padding: 3em 2em;
-  position: relative;
-
-  .bg--white {
-    padding-top: 7em;
-    @include breakpoint(md) {
-      padding: 3em 2em;
-    }
-  }
-}
-
-.quote__img {
-  position: absolute;
-  top: -25%;
-  left: 30%;
-  width: clamp(200px, 40%, 500px);
-  z-index: 2;
-
-  @include breakpoint(xsm) {
-    top: -9%;
-    left: 30%;
-  }
-
-  @include breakpoint(md) {
-    top: -8%;
-    left: -9rem;
-  }
-}
-
-.quote__text {
-  background-color: $white-color;
-  padding: 1em;
-  position: relative;
-  z-index: 1;
-  grid-column: 1/13;
-
-  @include breakpoint(md) {
-    grid-column: 4/13;
-  }
-
-  &::before {
-    content: url("../img/quote.svg");
-    position: absolute;
-    top: -10px;
-    left: -14px;
-  }
-
-  &::after {
-    content: url("../img/quote.svg");
-    position: absolute;
-    bottom: -30px;
-    right: -18px;
-  }
-}
-
 /* btn styles */
 .btn {
   padding: 0.25em 0.75em;
@@ -152,4 +91,65 @@
   width: 100%;
   margin-bottom: 0.5em;
   box-sizing: border-box;
+}
+
+/* quote styles */
+.quote {
+  margin-bottom: 1em;
+  background-image: url("../img/bg-squiggly-lines.png");
+  background-size: cover;
+  background-color: $white-color;
+  padding: 3em 2em;
+  position: relative;
+
+  .bg--white {
+    padding-top: 7em;
+    @include breakpoint(md) {
+      padding: 3em 2em;
+    }
+  }
+}
+
+.quote__img {
+  position: absolute;
+  top: -25%;
+  left: 30%;
+  width: clamp(200px, 40%, 500px);
+  z-index: 2;
+
+  @include breakpoint(xsm) {
+    top: -9%;
+    left: 30%;
+  }
+
+  @include breakpoint(md) {
+    top: -8%;
+    left: -9rem;
+  }
+}
+
+.quote__text {
+  background-color: $white-color;
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+  grid-column: 1/13;
+
+  @include breakpoint(md) {
+    grid-column: 4/13;
+  }
+
+  &::before {
+    content: url("../img/quote.svg");
+    position: absolute;
+    top: -10px;
+    left: -14px;
+  }
+
+  &::after {
+    content: url("../img/quote.svg");
+    position: absolute;
+    bottom: -30px;
+    right: -18px;
+  }
 }
