@@ -24,7 +24,7 @@
       @content;
     }
   } @else if $class == xlg {
-    @media (min-width: 1250px) {
+    @media (min-width: 1200px) {
       @content;
     }
   } @else if $class == xxlg {
