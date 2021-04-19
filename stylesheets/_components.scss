@@ -6,14 +6,31 @@
   background-color: $white-color;
   padding: 3em 2em;
   position: relative;
+
+  .bg--white {
+    padding-top: 7em;
+    @include breakpoint(md) {
+      padding: 3em 2em;
+    }
+  }
 }
 
 .quote__img {
   position: absolute;
-  top: -8rem;
-  left: -9rem;
-  width: clamp(300px, 40%, 500px);
+  top: -25%;
+  left: 30%;
+  width: clamp(200px, 40%, 500px);
   z-index: 2;
+
+  @include breakpoint(xsm) {
+    top: -9%;
+    left: 30%;
+  }
+
+  @include breakpoint(md) {
+    top: -8%;
+    left: -9rem;
+  }
 }
 
 .quote__text {
@@ -30,15 +47,15 @@
   &::before {
     content: url("../img/quote.svg");
     position: absolute;
-    top: 20px;
-    left: -10px;
+    top: -10px;
+    left: -14px;
   }
 
   &::after {
     content: url("../img/quote.svg");
     position: absolute;
-    bottom: 20px;
-    right: -10px;
+    bottom: -30px;
+    right: -18px;
   }
 }
 
