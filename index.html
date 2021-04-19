@@ -8,11 +8,14 @@
     <!-- External Sheets -->
     <link rel="stylesheet" href="https://use.typekit.net/xul0dml.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <!-- Internal Sheets -->
     <link rel="stylesheet" href="stylesheets/normalize.css" />
     <link rel="stylesheet" href="stylesheets/global.css" />
     <!-- Javascript -->
     <script src="https://cdn.tiny.cloud/1/zj7qtk2e7khjt27xm3s1rylzq1m0qhnryjckrw48q0fcrjo5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- Flickity Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
   </head>
   <body>
     <div class="container">
@@ -61,14 +64,45 @@
         </a>
         </div>
 
-        <div class="mt-3 mb-5">
-            <div class="prompt bg--third p-4">Prompt</div>
-            
-            <div class="text-editor wrapper-1200">
-              <form method="post">
-                <textarea id="mytextarea">You can restore your last draft or print your entry by selecting one of the options in the "<strong>File</strong>" tab.</textarea>
-              </form>
+        <div class="my-3">
+          <div class="prompt bg--third p-2 pr-3 pl-3">
+            <h2>Prompts</h2>
+            <div class="gallery js-flickity"
+              data-flickity-options='{ "wrapAround": true }'>
+              <div class="gallery-cell">
+                <p>What stressful circumstance are you currently facing? If you had a friend in the same situation, what advice would you give them?</p>
+              </div>
+              <div class="gallery-cell">
+                <p>What’s one thing that you feel scared to do, even though you know it’s important? How would a close friend encourage you to overcome that fear?</p>
+              </div>
+              <div class="gallery-cell">
+                <p>What is one thing you can remove from your everyday schedule to create more space for rest and self-care?</p>
+              </div>
+              <div class="gallery-cell">
+                <p>In what ways can you be more gentle with yourself? Write down 3 of them.</p>
+              </div>
+              <div class="gallery-cell">
+                <p>What is currently making you feel disappointed? How would a friend or loved one encourage you about this situation?</p>
+              </div>
+              <div class="gallery-cell">
+                <p>What helps you feel safe, held, and supported? How can you include this in your life when you feel stressed?</p>
+              </div>
+              
+              <div class="gallery-cell">
+                <p>How can you better use your words and self-talk to build yourself up? What words should you stop using?</p>
+              </div>
+              <div class="gallery-cell">
+                <p>Write a note to yourself 5 years in the future. Honestly describe what your life is like right now. Then, tell your future self what you hope your life will be like then, but reassure your future self that it’s okay if everything isn’t as you hope.</p>
+              </div>
             </div>
+            <p class="text--right"><small>Prompts by <a href="https://calminggrace.com/self-compassion-journal-prompts/">Calming Grace</a>.</small></p>
+          </div>
+        </div>
+            
+        <div class="text-editor wrapper-1200  mb-5">
+          <form method="post">
+            <textarea id="mytextarea">You can restore your last draft or print your entry by selecting one of the options in the "<strong>File</strong>" tab.</textarea>
+          </form>
         </div>
 
         <div class="quote">
