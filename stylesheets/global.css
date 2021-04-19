@@ -951,8 +951,8 @@ hr {
 
 .quote__img {
   position: absolute;
-  top: -5rem;
-  left: -10rem;
+  top: -8rem;
+  left: -9rem;
   width: clamp(300px, 40%, 500px);
   z-index: 2; }
 
