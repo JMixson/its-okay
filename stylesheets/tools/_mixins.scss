@@ -8,11 +8,11 @@
 /* media query mixin */
 @mixin breakpoint($class) {
   @if $class == xsm {
-    @media (max-width: 650px) {
+    @media (max-width: 600px) {
       @content;
     }
   } @else if $class == sm {
-    @media (min-width: 650px) {
+    @media (min-width: 600px) {
       @content;
     }
   } @else if $class == md {
