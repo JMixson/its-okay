@@ -16,7 +16,7 @@ body {
   margin: 0; }
 
 body {
-  font-size: 1.125em, 16px;
+  font-size: 1.125rem, 16px;
   font-family: apertura, sans-serif, sans-serif;
   overflow-x: hidden; }
   @media (min-width: 1200px) {
@@ -31,7 +31,7 @@ body {
 /* text styles */
 h1,
 .h1 {
-  font-size: calc(1.125em * 1.5); }
+  font-size: calc(1.125rem * 1.5); }
   @media (min-width: 600px) {
     h1,
     .h1 {
@@ -81,12 +81,14 @@ h6,
   margin: 1em 0; }
 
 p,
-span {
-  font-size: 1.125em; }
+span,
+ul li {
+  font-size: 1.125rem; }
   @media (min-width: 1200px) {
     p,
-    span {
-      font-size: calc(1.125em * 1.15); } }
+    span,
+    ul li {
+      font-size: calc(1.125rem * 1.15); } }
 
 p,
 ul li {
@@ -887,7 +889,7 @@ hr {
   grid-gap: 1em;
   grid-gap: 0;
   align-items: center;
-  font-size: 1.125em; }
+  font-size: 1.125rem; }
 
 .header__nav--mobile {
   grid-template-columns: repeat(2, 1fr); }
@@ -943,7 +945,7 @@ hr {
 /* btn styles */
 .btn, .btn--main, .btn--second, .btn--third {
   padding: 0.25em 0.75em;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   text-align: center;
   font-weight: 600;
   min-width: 100px;

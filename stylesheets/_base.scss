@@ -88,7 +88,8 @@ h6,
 }
 
 p,
-span {
+span,
+ul li {
   font-size: $font-size;
 
   @include breakpoint(xlg) {
