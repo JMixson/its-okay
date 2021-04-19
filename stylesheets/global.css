@@ -1061,4 +1061,11 @@ hr {
     .alert {
       margin-top: 6em; } }
 
+/* flickity styles */
+.gallery-cell {
+  width: 66%;
+  min-height: 100px;
+  margin-right: 1.5em;
+  padding: 1em; }
+
 /*# sourceMappingURL=global.css.map */
