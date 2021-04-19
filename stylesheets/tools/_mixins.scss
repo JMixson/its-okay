@@ -171,10 +171,10 @@ $span-r: (
 @mixin span-r-modifiers($attribute: "grid-row") {
   @each $name, $value in $span-r {
     &-#{$name} {
-      #{$attribute}: $value;
+      grid-row: span 12;
 
-      @include breakpoint(sm) {
-        grid-row: span 12;
+      @include breakpoint(md) {
+        #{$attribute}: $value;
       }
     }
   }
@@ -198,10 +198,10 @@ $span-c: (
 @mixin span-c-modifiers($attribute: "grid-column") {
   @each $name, $value in $span-c {
     &-#{$name} {
-      #{$attribute}: $value;
+      grid-row: span 12;
 
-      @include breakpoint(sm) {
-        grid-row: span 12;
+      @include breakpoint(md) {
+        #{$attribute}: $value;
       }
     }
   }

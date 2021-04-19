@@ -21,7 +21,11 @@
   padding: 1em;
   position: relative;
   z-index: 1;
-  grid-column: 4/12;
+  grid-column: 1/12;
+
+  @include breakpoint(md) {
+    grid-column: 4/12;
+  }
 
   &::before {
     content: url("../img/quote.svg");
