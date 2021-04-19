@@ -172,8 +172,8 @@
 
 .btn--main {
   @extend .btn;
-  border: 3px solid $grey-color;
-  color: $grey-color !important;
+  border: 3px solid $gray-color;
+  color: $gray-color !important;
   // background-color: $third-color;
   @include transition-300;
 
