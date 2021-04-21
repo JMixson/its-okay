@@ -1155,7 +1155,14 @@ hr {
     right: -18px; }
 
 .quote__cite {
-  grid-column: 5/13; }
+  grid-column: 5/13;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-top: 0; }
+  @media (min-width: 750px) {
+    .quote__cite {
+      margin-bottom: 0;
+      margin-right: 0; } }
 
 /* alert styles */
 .alert {
