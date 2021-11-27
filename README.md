@@ -1,2 +1,2 @@
-# its-okay
- A website about self-compassion
+# It's Okay
+ A website about self-compassion.
